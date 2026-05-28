@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Lilac Labs NGT LLC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#23201c;
+    --ink-soft:#4a453d;
+    --muted:#7a7268;
+    --paper:#faf7f1;
+    --paper-2:#f3eee4;
+    --rule:#e3dccd;
+    --accent:#6a7b53;
+    --accent-deep:#4f5d3d;
+    --child:#8a5a3c;
+    --child-bg:#f7efe6;
+    --child-rule:#e4cdb6;
+    --maxw:760px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Newsreader",Georgia,serif;
+    font-size:19px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--accent-deep);text-decoration:underline;text-underline-offset:2px;text-decoration-thickness:1px;}
+  a:hover{color:var(--child);}
+
+  .wrap{
+    max-width:var(--maxw);
+    margin:0 auto;
+    padding:0 28px 120px;
+  }
+
+  /* Masthead */
+  header.mast{
+    max-width:var(--maxw);
+    margin:0 auto;
+    padding:72px 28px 40px;
+    border-bottom:2px solid var(--ink);
+  }
+  .eyebrow{
+    font-family:"Newsreader",serif;
+    text-transform:uppercase;
+    letter-spacing:.22em;
+    font-size:13px;
+    color:var(--muted);
+    margin:0 0 14px;
+  }
+  h1.title{
+    font-family:"Fraunces",serif;
+    font-weight:600;
+    font-size:clamp(40px,7vw,64px);
+    line-height:1.02;
+    letter-spacing:-.015em;
+    margin:0 0 18px;
+    color:var(--ink);
+  }
+  .org{
+    font-family:"Fraunces",serif;
+    font-size:21px;
+    color:var(--accent-deep);
+    font-weight:500;
+    margin:0 0 22px;
+  }
+  .dates{
+    display:flex;
+    gap:28px;
+    flex-wrap:wrap;
+    font-size:15px;
+    color:var(--muted);
+  }
+  .dates b{color:var(--ink-soft);font-weight:600;}
+
+  /* TOC */
+  nav.toc{
+    margin:40px 0 8px;
+    padding:24px 26px;
+    background:var(--paper-2);
+    border:1px solid var(--rule);
+    border-radius:6px;
+  }
+  nav.toc h2{
+    font-family:"Newsreader",serif;
+    text-transform:uppercase;
+    letter-spacing:.18em;
+    font-size:12px;
+    color:var(--muted);
+    margin:0 0 14px;
+    font-weight:500;
+  }
+  nav.toc ol{
+    margin:0;padding:0;list-style:none;
+    columns:2;
+    column-gap:36px;
+    font-size:15.5px;
+  }
+  nav.toc li{
+    margin:0 0 9px;
+    break-inside:avoid;
+    line-height:1.35;
+  }
+  nav.toc a{
+    text-decoration:none;
+    color:var(--ink-soft);
+    display:flex;
+    gap:9px;
+  }
+  nav.toc a:hover{color:var(--child);}
+  nav.toc .num{color:var(--accent);font-variant-numeric:tabular-nums;min-width:18px;}
+
+  /* Sections */
+  section{padding-top:14px;}
+  h2.sec{
+    font-family:"Fraunces",serif;
+    font-weight:600;
+    font-size:27px;
+    letter-spacing:-.01em;
+    margin:46px 0 4px;
+    color:var(--ink);
+    scroll-margin-top:24px;
+  }
+  h2.sec .n{
+    color:var(--accent);
+    font-size:18px;
+    font-weight:500;
+    margin-right:10px;
+    vertical-align:1px;
+  }
+  h3.sub{
+    font-family:"Fraunces",serif;
+    font-weight:500;
+    font-size:19px;
+    margin:26px 0 2px;
+    color:var(--accent-deep);
+  }
+  p{margin:14px 0;color:var(--ink-soft);}
+  p.lead{color:var(--ink);}
+  strong{color:var(--ink);font-weight:600;}
+
+  ul.items{margin:14px 0;padding:0;list-style:none;}
+  ul.items li{
+    position:relative;
+    padding:0 0 0 26px;
+    margin:0 0 13px;
+    color:var(--ink-soft);
+  }
+  ul.items li::before{
+    content:"";
+    position:absolute;
+    left:4px;top:13px;
+    width:7px;height:7px;
+    background:var(--accent);
+    border-radius:50%;
+  }
+  ul.items li b{color:var(--ink);font-weight:600;}
+
+  .addr{
+    font-family:"Newsreader",serif;
+    background:var(--paper-2);
+    border-left:3px solid var(--accent);
+    padding:16px 20px;
+    margin:18px 0;
+    border-radius:0 5px 5px 0;
+    line-height:1.5;
+    color:var(--ink);
+  }
+  .addr a{font-weight:500;}
+
+  /* Children's COPPA section — set apart */
+  section.coppa{
+    margin-top:50px;
+    background:var(--child-bg);
+    border:1px solid var(--child-rule);
+    border-radius:8px;
+    padding:6px 30px 28px;
+  }
+  section.coppa h2.sec{color:var(--child);}
+  section.coppa h2.sec .n{color:var(--child);}
+  section.coppa ul.items li::before{background:var(--child);}
+  section.coppa .tag{
+    display:inline-block;
+    margin-top:26px;
+    font-family:"Newsreader",serif;
+    text-transform:uppercase;
+    letter-spacing:.16em;
+    font-size:11px;
+    color:#fff;
+    background:var(--child);
+    padding:5px 11px;
+    border-radius:3px;
+  }
+
+  hr.div{border:none;border-top:1px solid var(--rule);margin:8px 0;}
+
+  footer.foot{
+    max-width:var(--maxw);
+    margin:60px auto 0;
+    padding:30px 28px 0;
+    border-top:2px solid var(--ink);
+    font-size:14px;
+    color:var(--muted);
+  }
+  .totop{
+    display:inline-block;
+    margin-top:18px;
+    font-size:13px;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+    text-decoration:none;
+    color:var(--accent-deep);
+  }
+
+  @media (max-width:620px){
+    body{font-size:18px;}
+    nav.toc ol{columns:1;}
+    header.mast{padding-top:48px;}
+  }
+</style>
+</head>
+<body>
+
+<header class="mast">
+  <p class="eyebrow">Privacy Policy</p>
+  <h1 class="title">Privacy&nbsp;Policy</h1>
+  <p class="org">Lilac Labs NGT LLC</p>
+  <div class="dates">
+    <span><b>Effective</b> May 6, 2026</span>
+    <span><b>Last Updated</b> May 28, 2026</span>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <nav class="toc" aria-label="Table of contents">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#s1"><span class="num">1</span> Introduction</a></li>
+      <li><a href="#s2"><span class="num">2</span> Who We Are</a></li>
+      <li><a href="#s3"><span class="num">3</span> Information We Collect</a></li>
+      <li><a href="#s4"><span class="num">4</span> How We Use Information</a></li>
+      <li><a href="#s5"><span class="num">5</span> Your Communication Choices</a></li>
+      <li><a href="#s6"><span class="num">6</span> How We Share Information</a></li>
+      <li><a href="#s7"><span class="num">7</span> Cookies &amp; Tracking</a></li>
+      <li><a href="#s8"><span class="num">8</span> Data Retention</a></li>
+      <li><a href="#s9"><span class="num">9</span> Children&rsquo;s Privacy (COPPA)</a></li>
+      <li><a href="#s10"><span class="num">10</span> State &amp; International Rights</a></li>
+      <li><a href="#s11"><span class="num">11</span> Data Security</a></li>
+      <li><a href="#s12"><span class="num">12</span> Third-Party Links</a></li>
+      <li><a href="#s13"><span class="num">13</span> Changes to This Policy</a></li>
+      <li><a href="#s14"><span class="num">14</span> How to Contact Us</a></li>
+    </ol>
+  </nav>
+
+  <section id="s1">
+    <h2 class="sec"><span class="n">1</span>Introduction</h2>
+    <p class="lead">This Privacy Policy explains how Lilac Labs NGT LLC (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) collects, uses, shares, and protects information about you when you visit our website, contact us, subscribe to our communications, or use our products and services (collectively, the &ldquo;Services&rdquo;).</p>
+    <p>This policy covers two broad audiences: (1) visitors to our website and people who interact with our company &mdash; such as prospective customers, newsletter subscribers, and business contacts; and (2) users of our Sunny AI Tutor product. Because Sunny is directed to children, a dedicated section governs children&rsquo;s information and our practices under the Children&rsquo;s Online Privacy Protection Act (&ldquo;COPPA&rdquo;). See <a href="#s9">Section 9</a>.</p>
+    <p><strong>By using the Services, you acknowledge that you have read and understood this Privacy Policy.</strong></p>
+  </section>
+
+  <section id="s2">
+    <h2 class="sec"><span class="n">2</span>Who We Are</h2>
+    <p>The Services are operated by:</p>
+    <div class="addr">
+      Lilac Labs NGT LLC, a Wyoming limited liability company<br>
+      30 N Gould St #64228<br>
+      Sheridan, WY 82801<br>
+      <a href="mailto:privacy@lilaclabs.com">privacy@lilaclabs.com</a>
+    </div>
+    <p>For any privacy questions or requests, contact us using the email above.</p>
+  </section>
+
+  <section id="s3">
+    <h2 class="sec"><span class="n">3</span>Information We Collect</h2>
+    <h3 class="sub">3.1 Information You Provide Directly</h3>
+    <ul class="items">
+      <li><b>Contact and inquiry forms:</b> When you submit a contact, demo, or waitlist form, we collect the information you provide &mdash; typically your name, email address, company or role (if given), and the contents of your message.</li>
+      <li><b>Newsletter and communications:</b> When you subscribe to our newsletter or updates, we collect your email address and any name or preferences you provide.</li>
+      <li><b>Account and product data:</b> If you become a customer, we collect account and billing information needed to provide the Services. Product-specific data for Sunny is described in <a href="#s9">Section 9</a>.</li>
+    </ul>
+    <h3 class="sub">3.2 Information Collected Automatically</h3>
+    <ul class="items">
+      <li><b>Usage and device data:</b> When you visit our website, we and our analytics providers may collect device type, browser, operating system, pages viewed, referring URLs, approximate (non-precise) location inferred from IP address, and general usage patterns.</li>
+      <li><b>Cookies and similar technologies:</b> We use cookies that are necessary for our website to function &mdash; such as keeping you logged in, maintaining your session, and protecting against security threats. We do not currently use analytics or advertising cookies. If we begin using analytics tools in the future, we will update this policy to identify them and describe what they collect before doing so. See <a href="#s7">Section 7</a>.</li>
+    </ul>
+  </section>
+
+  <section id="s4">
+    <h2 class="sec"><span class="n">4</span>How We Use Information</h2>
+    <p>We use the information we collect to:</p>
+    <ul class="items">
+      <li><b>Communicate with you:</b> Respond to inquiries, demo requests, and waitlist signups.</li>
+      <li><b>Send communications:</b> Send newsletters, product updates, and marketing communications you have requested. You can unsubscribe at any time.</li>
+      <li><b>Operate the Services:</b> Operate, maintain, secure, and improve our website and Services.</li>
+      <li><b>Analyze and improve:</b> Understand how our website is used and improve content and performance.</li>
+      <li><b>Provide products:</b> Process transactions and manage customer accounts.</li>
+      <li><b>Legal compliance:</b> Comply with legal obligations and enforce our terms.</li>
+    </ul>
+  </section>
+
+  <section id="s5">
+    <h2 class="sec"><span class="n">5</span>Your Communication Choices</h2>
+    <p>You may opt out of marketing emails at any time by using the unsubscribe link in any message or by contacting us. We may still send you non-marketing messages related to your account, transactions, or security.</p>
+  </section>
+
+  <section id="s6">
+    <h2 class="sec"><span class="n">6</span>How We Share Information</h2>
+    <p>We do not sell your personal information. We share information only as follows:</p>
+    <ul class="items">
+      <li><b>Service providers:</b> Third parties that perform functions on our behalf &mdash; such as cloud hosting and infrastructure, email and newsletter delivery, analytics, and payment processing &mdash; under contracts that limit their use of the information.</li>
+      <li><b>Legal and safety:</b> When required by law, legal process, or to protect rights, safety, and security.</li>
+      <li><b>Business transfers:</b> In connection with a merger, acquisition, or sale of assets, subject to this policy and applicable law.</li>
+    </ul>
+  </section>
+
+  <section id="s7">
+    <h2 class="sec"><span class="n">7</span>Cookies and Tracking Technologies</h2>
+    <p>We use cookies and similar technologies that are strictly necessary for our website and Services to operate. These include cookies that keep you logged in, maintain your session, remember basic preferences, and protect the security of your account. Because these cookies are required for the Services to function, they are not subject to opt-in consent; however, you can refuse or delete cookies through your browser settings, though some features may not work properly without them.</p>
+    <p>We do not currently use cookies for analytics or for cross-context behavioral advertising. If we add analytics or advertising technologies in the future, we will update this Privacy Policy to describe them &mdash; and, where required by law, provide a consent mechanism &mdash; before they take effect.</p>
+  </section>
+
+  <section id="s8">
+    <h2 class="sec"><span class="n">8</span>Data Retention</h2>
+    <p>We retain personal information for as long as needed to fulfill the purposes described in this policy, comply with legal obligations, resolve disputes, and enforce our agreements. For example, we retain inquiry and newsletter data until you ask us to delete it or unsubscribe and a reasonable suppression period has passed.</p>
+  </section>
+
+  <section id="s9" class="coppa">
+    <h2 class="sec"><span class="n">9</span>Children&rsquo;s Privacy &mdash; Sunny AI Tutor (COPPA)</h2>
+    <p class="lead"><strong>Our company website is intended for adults and is not directed to children. We do not knowingly collect personal information from children through our marketing website, contact forms, or newsletter.</strong></p>
+    <p>Our Sunny AI Tutor product, however, is designed for children in grades K&ndash;5 (approximately ages 5 to 11). We knowingly collect personal information from children within Sunny and comply with COPPA. The following practices apply specifically to Sunny:</p>
+    <ul class="items">
+      <li><b>Parent-managed accounts:</b> Accounts are created and managed by a parent or legal guardian (&ldquo;Parent&rdquo;). A child may use Sunny only under a Parent&rsquo;s account.</li>
+      <li><b>Verifiable parental consent:</b> We obtain verifiable parental consent before collecting personal information from a child, and we provide Parents direct notice of our practices before collection.</li>
+      <li><b>What Sunny collects:</b> Within Sunny we may collect a child&rsquo;s first name or nickname, grade level, learning activity and progress, and &mdash; where voice features are enabled &mdash; voice recordings used to provide speech-based tutoring. Voice data is treated as sensitive.</li>
+      <li><b>How it is used:</b> Children&rsquo;s information is used to deliver and personalize tutoring, generate feedback, maintain safety, and improve the product. We process this information ourselves using secure cloud infrastructure that operates on our behalf under a data processing agreement, with appropriate security measures and restrictions on access to and use of the data. We do not sell children&rsquo;s personal information or share it with third parties for their own purposes.</li>
+      <li><b>No selling, no ad targeting:</b> We do not sell children&rsquo;s personal information and do not use it for targeted or behavioral advertising.</li>
+      <li><b>Parental rights:</b> Parents can review and manage their child&rsquo;s information, refuse further collection, and request deletion directly from the parent dashboard while logged in to their account. Because account access verifies your identity, no separate verification is typically required. For requests that cannot be completed through the dashboard &mdash; such as full account deletion or withdrawing consent &mdash; or if you are unable to access your account, contact us using the information in <a href="#s2">Section 2</a>.</li>
+    </ul>
+    <p>If you believe a child has provided us personal information without the required parental consent, contact us using the details in <a href="#s2">Section 2</a>. We will take reasonable steps to verify the request and the requester&rsquo;s relationship to the child, and will promptly delete the information if verification confirms consent was not properly obtained.</p>
+    <span class="tag">COPPA &mdash; Children&rsquo;s Data</span>
+  </section>
+
+  <section id="s10">
+    <h2 class="sec"><span class="n">10</span>U.S. State Privacy Rights and International Users</h2>
+    <p>Depending on your U.S. state of residence (for example, California, Colorado, Connecticut, Virginia, and others), you may have rights to access, correct, delete, or limit certain processing of your personal information, and the right not to be discriminated against for exercising those rights. We extend core access and deletion rights to all individuals regardless of state. Where available, you can exercise these rights directly through your account dashboard while logged in. For other requests, or if you cannot access your account, contact us using the information in <a href="#s2">Section 2</a>; we will verify your identity before responding.</p>
+    <p><strong>We do not sell personal information and do not &ldquo;share&rdquo; it for cross-context behavioral advertising as those terms are defined under applicable U.S. state privacy laws.</strong></p>
+    <p>The Services are operated from the United States. If you access them from outside the United States, you understand your information will be processed in the United States, where data protection laws may differ from those in your location.</p>
+  </section>
+
+  <section id="s11">
+    <h2 class="sec"><span class="n">11</span>Data Security</h2>
+    <p>We maintain administrative, technical, and physical safeguards designed to protect personal information, including encryption in transit, access controls, and limiting access to personnel who need it. No method of transmission or storage is completely secure, and we cannot guarantee absolute security.</p>
+  </section>
+
+  <section id="s12">
+    <h2 class="sec"><span class="n">12</span>Third-Party Links</h2>
+    <p>Our website may link to third-party sites or services we do not control. This Privacy Policy does not apply to those third parties, and we encourage you to review their privacy practices.</p>
+  </section>
+
+  <section id="s13">
+    <h2 class="sec"><span class="n">13</span>Changes to This Privacy Policy</h2>
+    <p>We may update this Privacy Policy from time to time. The &ldquo;Last Updated&rdquo; date above reflects the most recent revision. If we make material changes affecting children&rsquo;s personal information collected through Sunny, we will notify Parents and obtain renewed verifiable parental consent where required by COPPA.</p>
+  </section>
+
+  <section id="s14">
+    <h2 class="sec"><span class="n">14</span>How to Contact Us</h2>
+    <p>If you have questions, concerns, or requests regarding this Privacy Policy, please contact us:</p>
+    <div class="addr">
+      Lilac Labs NGT LLC<br>
+      <a href="mailto:privacy@lilaclabs.com">privacy@lilaclabs.com</a><br>
+      30 N Gould St #64228<br>
+      Sheridan, WY 82801
+    </div>
+  </section>
+
+</div>
+
+<footer class="foot">
+  <p>&copy; 2026 Lilac Labs NGT LLC. All rights reserved.</p>
+  <a class="totop" href="#top">&uarr; Back to top</a>
+</footer>
+
+<span id="top"></span>
+</body>
+</html>
