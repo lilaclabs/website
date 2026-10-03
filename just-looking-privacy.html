@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Just Looking Privacy Policy — Lilac Labs NGT LLC</title>
+<meta name="description" content="How the Just Looking iOS app handles your information: it collects none, and your photos never leave your device.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#23201c;
+    --ink-soft:#4a453d;
+    --muted:#7a7268;
+    --paper:#faf7f1;
+    --paper-2:#f3eee4;
+    --rule:#e3dccd;
+    --accent:#6a7b53;
+    --accent-deep:#4f5d3d;
+    --child:#8a5a3c;
+    --child-bg:#f7efe6;
+    --child-rule:#e4cdb6;
+    --maxw:760px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Newsreader",Georgia,serif;
+    font-size:19px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--accent-deep);text-decoration:underline;text-underline-offset:2px;text-decoration-thickness:1px;}
+  a:hover{color:var(--child);}
+
+  .wrap{
+    max-width:var(--maxw);
+    margin:0 auto;
+    padding:0 28px 120px;
+  }
+
+  /* Masthead */
+  header.mast{
+    max-width:var(--maxw);
+    margin:0 auto;
+    padding:72px 28px 40px;
+    border-bottom:2px solid var(--ink);
+  }
+  .eyebrow{
+    font-family:"Newsreader",serif;
+    text-transform:uppercase;
+    letter-spacing:.22em;
+    font-size:13px;
+    color:var(--muted);
+    margin:0 0 14px;
+  }
+  h1.title{
+    font-family:"Fraunces",serif;
+    font-weight:600;
+    font-size:clamp(40px,7vw,64px);
+    line-height:1.02;
+    letter-spacing:-.015em;
+    margin:0 0 18px;
+    color:var(--ink);
+  }
+  .org{
+    font-family:"Fraunces",serif;
+    font-size:21px;
+    color:var(--accent-deep);
+    font-weight:500;
+    margin:0 0 22px;
+  }
+  .dates{
+    display:flex;
+    gap:28px;
+    flex-wrap:wrap;
+    font-size:15px;
+    color:var(--muted);
+  }
+  .dates b{color:var(--ink-soft);font-weight:600;}
+
+  /* TOC */
+  nav.toc{
+    margin:40px 0 8px;
+    padding:24px 26px;
+    background:var(--paper-2);
+    border:1px solid var(--rule);
+    border-radius:6px;
+  }
+  nav.toc h2{
+    font-family:"Newsreader",serif;
+    text-transform:uppercase;
+    letter-spacing:.18em;
+    font-size:12px;
+    color:var(--muted);
+    margin:0 0 14px;
+    font-weight:500;
+  }
+  nav.toc ol{
+    margin:0;padding:0;list-style:none;
+    columns:2;
+    column-gap:36px;
+    font-size:15.5px;
+  }
+  nav.toc li{
+    margin:0 0 9px;
+    break-inside:avoid;
+    line-height:1.35;
+  }
+  nav.toc a{
+    text-decoration:none;
+    color:var(--ink-soft);
+    display:flex;
+    gap:9px;
+  }
+  nav.toc a:hover{color:var(--child);}
+  nav.toc .num{color:var(--accent);font-variant-numeric:tabular-nums;min-width:18px;}
+
+  /* Sections */
+  section{padding-top:14px;}
+  h2.sec{
+    font-family:"Fraunces",serif;
+    font-weight:600;
+    font-size:27px;
+    letter-spacing:-.01em;
+    margin:46px 0 4px;
+    color:var(--ink);
+    scroll-margin-top:24px;
+  }
+  h2.sec .n{
+    color:var(--accent);
+    font-size:18px;
+    font-weight:500;
+    margin-right:10px;
+    vertical-align:1px;
+  }
+  h3.sub{
+    font-family:"Fraunces",serif;
+    font-weight:500;
+    font-size:19px;
+    margin:26px 0 2px;
+    color:var(--accent-deep);
+  }
+  p{margin:14px 0;color:var(--ink-soft);}
+  p.lead{color:var(--ink);}
+  strong{color:var(--ink);font-weight:600;}
+
+  ul.items{margin:14px 0;padding:0;list-style:none;}
+  ul.items li{
+    position:relative;
+    padding:0 0 0 26px;
+    margin:0 0 13px;
+    color:var(--ink-soft);
+  }
+  ul.items li::before{
+    content:"";
+    position:absolute;
+    left:4px;top:13px;
+    width:7px;height:7px;
+    background:var(--accent);
+    border-radius:50%;
+  }
+  ul.items li b{color:var(--ink);font-weight:600;}
+
+  .addr{
+    font-family:"Newsreader",serif;
+    background:var(--paper-2);
+    border-left:3px solid var(--accent);
+    padding:16px 20px;
+    margin:18px 0;
+    border-radius:0 5px 5px 0;
+    line-height:1.5;
+    color:var(--ink);
+  }
+  .addr a{font-weight:500;}
+
+  /* Children's COPPA section — set apart */
+  section.coppa{
+    margin-top:50px;
+    background:var(--child-bg);
+    border:1px solid var(--child-rule);
+    border-radius:8px;
+    padding:6px 30px 28px;
+  }
+  section.coppa h2.sec{color:var(--child);}
+  section.coppa h2.sec .n{color:var(--child);}
+  section.coppa ul.items li::before{background:var(--child);}
+  section.coppa .tag{
+    display:inline-block;
+    margin-top:26px;
+    font-family:"Newsreader",serif;
+    text-transform:uppercase;
+    letter-spacing:.16em;
+    font-size:11px;
+    color:#fff;
+    background:var(--child);
+    padding:5px 11px;
+    border-radius:3px;
+  }
+
+  hr.div{border:none;border-top:1px solid var(--rule);margin:8px 0;}
+
+  footer.foot{
+    max-width:var(--maxw);
+    margin:60px auto 0;
+    padding:30px 28px 0;
+    border-top:2px solid var(--ink);
+    font-size:14px;
+    color:var(--muted);
+  }
+  .totop{
+    display:inline-block;
+    margin-top:18px;
+    font-size:13px;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+    text-decoration:none;
+    color:var(--accent-deep);
+  }
+
+  @media (max-width:620px){
+    body{font-size:18px;}
+    nav.toc ol{columns:1;}
+    header.mast{padding-top:48px;}
+  }
+</style>
+</head>
+<body>
+<header class="mast">
+  <p class="eyebrow">Privacy Policy</p>
+  <h1 class="title">Just Looking</h1>
+  <p class="org">Lilac Labs NGT LLC</p>
+  <div class="dates">
+    <span><b>Effective</b> October 3, 2026</span>
+    <span><b>Last Updated</b> October 3, 2026</span>
+  </div>
+</header>
+<main class="wrap">
+  <nav class="toc" aria-label="Contents">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#summary"><span class="num">1</span><span>The Short Version</span></a></li>
+      <li><a href="#photos"><span class="num">2</span><span>Your Photos and Videos</span></a></li>
+      <li><a href="#checking"><span class="num">3</span><span>The On-Device Nudity Check</span></a></li>
+      <li><a href="#music"><span class="num">4</span><span>Apple Music</span></a></li>
+      <li><a href="#lock"><span class="num">5</span><span>Your PIN and Face ID</span></a></li>
+      <li><a href="#tv"><span class="num">6</span><span>Showing Photos on a TV</span></a></li>
+      <li><a href="#feedback"><span class="num">7</span><span>Crash Reports and Feedback</span></a></li>
+      <li><a href="#children"><span class="num">8</span><span>Children</span></a></li>
+      <li><a href="#sharing"><span class="num">9</span><span>Sharing and Selling</span></a></li>
+      <li><a href="#changes"><span class="num">10</span><span>Changes to This Policy</span></a></li>
+      <li><a href="#contact"><span class="num">11</span><span>Contact Us</span></a></li>
+    </ol>
+  </nav>
+<section id="summary">
+  <h2 class="sec"><span class="n">1</span>The Short Version</h2>
+<p class="lead">Just Looking doesn&rsquo;t collect, store, or share any personal information. Your photos stay on your device. There are no accounts, ads, analytics, or tracking, and we never see what&rsquo;s on your phone.</p>
+</section>
+<section id="photos">
+  <h2 class="sec"><span class="n">2</span>Your Photos and Videos</h2>
+<p>With your permission, Just Looking reads your photo library only to show it on your device. It never uploads, shares, changes, or deletes anything.</p>
+<p>If you use iCloud Photos and a photo&rsquo;s original is kept in iCloud, iOS may download it from Apple so it can be shown. That happens between your device and Apple, under <a href="https://www.apple.com/legal/privacy/">Apple&rsquo;s Privacy Policy</a>.</p>
+</section>
+<section id="checking">
+  <h2 class="sec"><span class="n">3</span>The On-Device Nudity Check</h2>
+<p>If you turn it on, Just Looking checks photos and videos with Apple&rsquo;s Sensitive Content Analysis, which runs entirely on your device. The results (which photos are fine to show) are saved only on your device, left out of backups, and never sent to us or anyone else. Checking can continue while your device is locked and charging; it still happens only on your device.</p>
+</section>
+<section id="music">
+  <h2 class="sec"><span class="n">4</span>Apple Music</h2>
+<p>If you connect Apple Music, Just Looking uses Apple&rsquo;s MusicKit to list, search, and play playlists, and to look up whether songs are explicit so they can be skipped. These requests go to Apple, under Apple&rsquo;s Privacy Policy; we receive nothing. Song ratings are remembered on your device so explicit songs can still be skipped offline.</p>
+</section>
+<section id="lock">
+  <h2 class="sec"><span class="n">5</span>Your PIN and Face ID</h2>
+<p>The owner PIN is stored only on your device, in the iOS Keychain, as a one-way hash rather than the PIN itself. Face ID is handled entirely by iOS; the app is only told whether it succeeded. Your settings are also stored only on your device.</p>
+</section>
+<section id="tv">
+  <h2 class="sec"><span class="n">6</span>Showing Photos on a TV</h2>
+<p>When you use Screen Mirroring, Just Looking shows photos on your TV through iOS. Nothing is sent to us.</p>
+</section>
+<section id="feedback">
+  <h2 class="sec"><span class="n">7</span>Crash Reports and Feedback</h2>
+<p>If you choose to share crash reports or app analytics with developers in your device&rsquo;s settings, or send feedback through TestFlight, Apple provides that information to us. It can include your device model, iOS version, crash logs, and any comments or screenshots you choose to send. We use it only to fix problems and improve the app.</p>
+</section>
+<section id="children">
+  <h2 class="sec"><span class="n">8</span>Children</h2>
+<p>Just Looking doesn&rsquo;t collect personal information from anyone, including children under 13.</p>
+</section>
+<section id="sharing">
+  <h2 class="sec"><span class="n">9</span>Sharing and Selling</h2>
+<p>We don&rsquo;t sell or share any information about you, because we don&rsquo;t collect any.</p>
+</section>
+<section id="changes">
+  <h2 class="sec"><span class="n">10</span>Changes to This Policy</h2>
+<p>If this policy changes, we&rsquo;ll update this page and the date at the top.</p>
+</section>
+<section id="contact">
+  <h2 class="sec"><span class="n">11</span>Contact Us</h2>
+<p>Questions about privacy in Just Looking are welcome:</p>
+<div class="addr">
+Lilac Labs NGT LLC<br>
+30 N Gould St #64228<br>
+Sheridan, WY 82801<br>
+<a href="mailto:privacy@lilaclabs.com">privacy@lilaclabs.com</a>
+</div>
+<p>For our website and other products, see the <a href="privacy-policy.html">Lilac Labs Privacy Policy</a>.</p>
+</section>
+</main>
+<footer class="foot">
+  &copy; 2026 Lilac Labs NGT LLC &middot; <a href="index.html">lilaclabs.com</a>
+  <br><a class="totop" href="#">Back to top</a>
+</footer>
+</body>
+</html>
