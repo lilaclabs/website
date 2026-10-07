@@ -147,9 +147,13 @@
                 setSound(false);
                 return;
             }
-            setSound(true);
             // Start the lesson over so Sunny's voice begins at the first line.
+            // Pause and rewind before unmuting, or the clip is heard for an
+            // instant where it was. All of it runs inside the tap, which phones
+            // need before they'll play sound.
+            video.pause();
             try { video.currentTime = 0; } catch (e) { /* not loaded yet */ }
+            setSound(true);
             playClip();
         });
         // Native controls (reduced motion) can unmute too; keep the button in step.
@@ -169,6 +173,8 @@
             var tab = tabs[i];
             title.textContent = tab.querySelector("strong").textContent + " · " +
                 tab.querySelector(".reel-grade").textContent.split(" · ")[0];
+            // Stop the old clip now, so its voice doesn't run on under the fade.
+            video.pause();
             video.classList.add("is-swapping");
             setTimeout(function () {
                 video.poster = tab.dataset.poster;

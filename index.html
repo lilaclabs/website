@@ -17,7 +17,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,0..100;1,9..144,300..700,0..100&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
-    <link rel="stylesheet" href="styles.css">
+    <!-- Bump ?v= whenever styles.css or main.js change: browsers keep the old
+         files for a while, and a new page with an old stylesheet looks broken. -->
+    <link rel="stylesheet" href="styles.css?v=20261007">
     <script>document.documentElement.classList.add("js");</script>
     <title>Sunny — An educational harness for AI | Lilac Labs</title>
 </head>
@@ -569,7 +571,7 @@
         </div>
     </footer>
 
-    <script src="main.js" defer></script>
+    <script src="main.js?v=20261007" defer></script>
     <script>
         // Tally's official embed loader: loads the widget, and if the widget is
         // blocked or fails, points each iframe at its data-tally-src directly.
