@@ -3,223 +3,595 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Lilac Labs designs native applications, resilient infrastructure, and cross-platform software engineered to scale.">
-    <meta name="theme-color" content="#08070d">
+    <meta name="description" content="Sunny is an educational harness for AI: it decides what K–5 students learn, works out the right answers first, checks everything the AI writes, and teaches through narrated, animated lessons. Closed beta Q4 2026.">
+    <meta name="theme-color" content="#fbf7ef">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Lilac Labs — Software and infrastructure, engineered to scale">
-    <meta property="og:description" content="Native applications, resilient infrastructure, and cross-platform systems built with precision.">
+    <meta property="og:title" content="Sunny — An educational harness for AI | Lilac Labs">
+    <meta property="og:description" content="Narrated, animated K–5 lessons, with every answer worked out in code and everything the AI writes checked before a student sees it.">
     <meta property="og:url" content="https://www.lilaclabs.com/">
-    <meta property="og:image" content="https://www.lilaclabs.com/og.png">
-    <meta property="og:image:alt" content="Lilac Labs — Software and infrastructure, engineered to scale.">
+    <meta property="og:image" content="https://www.lilaclabs.com/og-sunny.png">
+    <meta property="og:image:alt" content="Sunny by Lilac Labs: an educational harness for AI.">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="canonical" href="https://www.lilaclabs.com/">
+    <link rel="icon" href="assets/art/sunny-96.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,0..100;1,9..144,300..700,0..100&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
     <link rel="stylesheet" href="styles.css">
-    <title>Lilac Labs — Software &amp; Infrastructure</title>
+    <script>document.documentElement.classList.add("js");</script>
+    <title>Sunny — An educational harness for AI | Lilac Labs</title>
 </head>
 <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <div class="site-shell">
-        <header class="site-header">
+    <header class="site-header" data-header>
+        <div class="header-inner">
             <a class="brand" href="#top" aria-label="Lilac Labs home">
-                <span class="brand-icon" aria-hidden="true">
-                    <img src="lilaclabs-avatar.png" alt="">
-                </span>
-                <span class="brand-type">
-                    <strong>Lilac Labs</strong>
-                    <small>Software + infrastructure</small>
-                </span>
+                <img class="brand-mark" src="lilaclabs-avatar.png" alt="" width="34" height="34">
+                <span class="brand-name">Lilac Labs</span>
             </a>
-
             <nav class="site-nav" aria-label="Main navigation">
-                <a href="#capabilities">Capabilities</a>
-                <a href="#about">Approach</a>
-                <a href="projects.html">Projects</a>
+                <a href="#lessons">Lessons</a>
+                <a href="#harness">How it works</a>
+                <a href="#next">What's next</a>
             </nav>
-        </header>
+            <a class="button button-small" href="#beta">Join the beta</a>
+        </div>
+    </header>
 
-        <main id="main-content">
-            <section class="hero" id="top">
-                <div class="hero-grid" aria-hidden="true"></div>
-                <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
-                <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
+    <main id="main-content">
 
-                <div class="content hero-layout">
-                    <div class="hero-copy">
-                        <p class="eyebrow">
-                            <span class="status-dot" aria-hidden="true"></span>
-                            Software <span>/</span> Infrastructure <span>/</span> iOS
-                        </p>
-                        <h1>Software and infrastructure, <em>engineered to scale.</em></h1>
-                        <p class="hero-lede">
-                            Lilac Labs designs native applications and resilient compute systems
-                            across platforms—built for clarity, efficiency, and long-term operation.
-                        </p>
+        <!-- ============================== Hero ============================== -->
+        <section class="hero" id="top">
+            <div class="hero-paper" aria-hidden="true"></div>
+            <div class="hero-glow glow-sun" aria-hidden="true"></div>
+            <div class="hero-glow glow-lilac" aria-hidden="true"></div>
 
-                        <div class="hero-actions">
-                            <a class="button button-primary" href="#capabilities">
-                                Explore capabilities
-                                <span aria-hidden="true">↓</span>
-                            </a>
-                            <a class="button button-secondary" href="#about">Our approach</a>
-                        </div>
-
-                        <div class="hero-signals">
-                            <span>Native systems</span>
-                            <span>Distributed compute</span>
-                            <span>Architecture</span>
-                        </div>
-                    </div>
-
-                    <div class="hero-visual">
-                        <div class="visual-orbit orbit-one" aria-hidden="true"></div>
-                        <div class="visual-orbit orbit-two" aria-hidden="true"></div>
-                        <div class="brand-panel">
-                            <img src="lilaclabs-dark.png" alt="Lilac Labs geometric circuit mark">
-                            <div class="panel-scan" aria-hidden="true"></div>
-                        </div>
-                        <div class="tech-tag tech-tag-top" aria-hidden="true">
-                            <span>Native</span>
-                            <strong>iOS</strong>
-                        </div>
-                        <div class="tech-tag tech-tag-bottom" aria-hidden="true">
-                            <span>Systems</span>
-                            <strong>Infrastructure</strong>
-                        </div>
+            <div class="wrap hero-layout">
+                <div class="hero-copy">
+                    <p class="pill" data-rise>
+                        <span class="pulse-dot" aria-hidden="true"></span>
+                        Sunny Personal Tutor <span class="pill-sep">·</span> closed beta Q4 2026
+                    </p>
+                    <h1 data-rise style="--d: 80ms">An educational harness <em>for AI.</em></h1>
+                    <p class="hero-lede" data-rise style="--d: 160ms">
+                        Sunny turns AI into a patient reading and math teacher for kindergarten
+                        through fifth grade. It decides what each student learns next, works out
+                        the right answers before the AI says a word, checks everything the AI
+                        writes, and keeps every student safe.
+                    </p>
+                    <div class="hero-actions" data-rise style="--d: 240ms">
+                        <a class="button" href="#beta">Join the waitlist <span aria-hidden="true">→</span></a>
+                        <a class="button button-ghost" href="#lessons">
+                            <span class="play-glyph" aria-hidden="true"></span>
+                            Watch the lessons
+                        </a>
                     </div>
                 </div>
-            </section>
 
-            <section class="signal-bar" aria-label="Lilac Labs disciplines">
-                <div class="content signal-track">
-                    <span>Product engineering</span>
-                    <i aria-hidden="true"></i>
-                    <span>Compute infrastructure</span>
-                    <i aria-hidden="true"></i>
-                    <span>Cross-platform systems</span>
-                    <i aria-hidden="true"></i>
-                    <span>Technical strategy</span>
-                </div>
-            </section>
-
-            <section class="section capabilities" id="capabilities">
-                <div class="content">
-                    <div class="section-heading">
-                        <div>
-                            <p class="section-kicker">01 / Capabilities</p>
-                            <h2>Complex technology.<br><span>Clear execution.</span></h2>
+                <div class="hero-stage" data-rise style="--d: 200ms" data-tilt>
+                    <img class="hero-sunny" src="assets/art/sunny-wave.png" alt="" width="280" height="280">
+                    <figure class="device">
+                        <div class="device-bar" aria-hidden="true">
+                            <span></span><span></span><span></span>
+                            <p>Same on both sides · Grade 1</p>
                         </div>
-                        <p>
-                            From the interface in someone’s hand to the systems working behind it,
-                            we build dependable software across the stack.
-                        </p>
+                        <video class="device-video" src="assets/lessons/balance.mp4" poster="assets/lessons/balance.jpg"
+                               autoplay muted loop playsinline preload="auto" data-autoplay
+                               aria-label="A Sunny lesson: cubes tip a balance until both sides hold the same amount."></video>
+                    </figure>
+                    <div class="float-chip chip-curriculum" aria-hidden="true">
+                        <span class="chip-k">Curriculum</span>
+                        <strong>Grade 1 · equal sign</strong>
                     </div>
-
-                    <div class="capability-grid">
-                        <article class="capability-card">
-                            <div class="card-index">01</div>
-                            <div class="card-marker" aria-hidden="true"></div>
-                            <p class="card-label">Product</p>
-                            <h3>iOS App Development</h3>
-                            <p>Purpose-built native experiences for Apple platforms, from product architecture through implementation.</p>
-                            <div class="card-tags">
-                                <span>Native</span>
-                                <span>Mobile</span>
-                            </div>
-                        </article>
-
-                        <article class="capability-card">
-                            <div class="card-index">02</div>
-                            <div class="card-marker" aria-hidden="true"></div>
-                            <p class="card-label">Systems</p>
-                            <h3>Infrastructure Solutions</h3>
-                            <p>Secure, decentralized, and operationally resilient compute infrastructure designed for real-world use.</p>
-                            <div class="card-tags">
-                                <span>Secure</span>
-                                <span>Distributed</span>
-                            </div>
-                        </article>
-
-                        <article class="capability-card">
-                            <div class="card-index">03</div>
-                            <div class="card-marker" aria-hidden="true"></div>
-                            <p class="card-label">Platforms</p>
-                            <h3>Cross-Platform Software</h3>
-                            <p>Consistent, maintainable systems that work cleanly across environments without compromising the experience.</p>
-                            <div class="card-tags">
-                                <span>Scalable</span>
-                                <span>Efficient</span>
-                            </div>
-                        </article>
-
-                        <article class="capability-card">
-                            <div class="card-index">04</div>
-                            <div class="card-marker" aria-hidden="true"></div>
-                            <p class="card-label">Direction</p>
-                            <h3>Technical Consulting</h3>
-                            <p>Practical guidance on software and hardware architecture, implementation choices, and delivery strategy.</p>
-                            <div class="card-tags">
-                                <span>Architecture</span>
-                                <span>Strategy</span>
-                            </div>
-                        </article>
+                    <div class="float-chip chip-answer" aria-hidden="true">
+                        <span class="chip-check">✓</span>
+                        <span><span class="chip-k">Answer worked out first</span><strong>4 + 3 = 7</strong></span>
+                    </div>
+                    <div class="float-chip chip-voice" aria-hidden="true">
+                        <span class="wave-bars"><i></i><i></i><i></i><i></i></span>
+                        <span><span class="chip-k">Narrated</span><strong>by Sunny</strong></span>
                     </div>
                 </div>
-            </section>
+            </div>
 
-            <section class="section approach" id="about">
-                <div class="content approach-layout">
-                    <div class="approach-copy">
-                        <p class="section-kicker">02 / Approach</p>
-                        <h2>Engineering across<br><span>the whole system.</span></h2>
-                        <p class="approach-lede">
-                            Good technology is more than a polished interface or a powerful backend.
-                            It is the way every layer works together under real constraints.
-                        </p>
-                        <p>
-                            Lilac Labs combines product thinking with deep systems experience to
-                            create software that is focused, maintainable, and ready to operate.
-                        </p>
-                    </div>
+            <div class="wrap">
+                <dl class="stats" data-reveal>
+                    <div><dt>narrated lessons</dt><dd data-count="100" data-suffix="+">100+</dd></div>
+                    <div><dt>animated chapters</dt><dd data-count="300" data-suffix="+">300+</dd></div>
+                    <div><dt>standards-aligned math skills</dt><dd data-count="188">188</dd></div>
+                    <div><dt>lines voiced by Sunny</dt><dd data-count="5500" data-suffix="+">5,500+</dd></div>
+                </dl>
+            </div>
+        </section>
 
-                    <ol class="principles">
-                        <li>
-                            <span class="principle-number">01</span>
-                            <div>
-                                <h3>Clarity first</h3>
-                                <p>Define the problem, remove unnecessary surface area, and make the right tradeoffs visible.</p>
+        <!-- ============================== Lessons ============================== -->
+        <section class="section lessons" id="lessons">
+            <div class="wrap">
+                <div class="section-head" data-reveal>
+                    <p class="kicker"><span>01</span> What we've built</p>
+                    <h2>Lessons that move. <em>Drawn live, voiced by Sunny.</em></h2>
+                    <p class="section-lede">
+                        Sunny teaches new ideas with short animated lessons, each one a little story
+                        on a live stage: cubes tip a balance, a cookie is cut into fair shares, a
+                        fraction wall lines up its pieces. Students make their own calls along the
+                        way, and Sunny talks them through every step.
+                    </p>
+                </div>
+
+                <div class="reel" data-reel data-reveal>
+                    <ol class="reel-list" role="tablist" aria-label="Lesson clips">
+                        <!-- Filled from data attributes on each button; the first is active. -->
+                        <li><button type="button" role="tab" aria-controls="reel-screen" class="reel-tab is-active" aria-selected="true" data-src="assets/lessons/fraction-wall.mp4" data-poster="assets/lessons/fraction-wall.jpg">
+                            <span class="reel-grade">Grade 3 · Fractions</span>
+                            <strong>The fraction wall</strong>
+                            <span class="reel-desc">One whole bar, sliced into halves, fourths and eighths. More pieces, smaller pieces.</span>
+                            <span class="reel-progress" aria-hidden="true"><i></i></span>
+                        </button></li>
+                        <li><button type="button" role="tab" aria-controls="reel-screen" class="reel-tab" aria-selected="false" data-src="assets/lessons/fair-shares.mp4" data-poster="assets/lessons/fair-shares.jpg">
+                            <span class="reel-grade">Grade 1 · Halves and fourths</span>
+                            <strong>Fair shares</strong>
+                            <span class="reel-desc">Two friends, one cookie. Uh-oh, the pieces aren't the same size. Let's cut it fairly.</span>
+                            <span class="reel-progress" aria-hidden="true"><i></i></span>
+                        </button></li>
+                        <li><button type="button" role="tab" aria-controls="reel-screen" class="reel-tab" aria-selected="false" data-src="assets/lessons/sharing.mp4" data-poster="assets/lessons/sharing.jpg">
+                            <span class="reel-grade">Grade 3 · Division</span>
+                            <strong>Sharing equally</strong>
+                            <span class="reel-desc">Strawberries are dealt into boxes one at a time until every box holds the same.</span>
+                            <span class="reel-progress" aria-hidden="true"><i></i></span>
+                        </button></li>
+                        <li><button type="button" role="tab" aria-controls="reel-screen" class="reel-tab" aria-selected="false" data-src="assets/lessons/clock.mp4" data-poster="assets/lessons/clock.jpg">
+                            <span class="reel-grade">Grade 2 · Time</span>
+                            <strong>Five minutes a number</strong>
+                            <span class="reel-desc">The long hand sweeps the clock face, counting by fives as it goes.</span>
+                            <span class="reel-progress" aria-hidden="true"><i></i></span>
+                        </button></li>
+                    </ol>
+
+                    <figure class="reel-screen" id="reel-screen" role="tabpanel">
+                        <div class="device device-flat">
+                            <div class="device-bar">
+                                <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+                                <p data-reel-title aria-hidden="true">The fraction wall · Grade 3</p>
+                                <button type="button" class="sound-toggle" aria-pressed="false" data-sound>
+                                    <svg class="sound-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path class="sound-body" d="M4 9.5h3.2L12 5.5v13l-4.8-4H4z"/>
+                                        <path class="sound-off" d="M16 9.5l5 5M21 9.5l-5 5"/>
+                                        <path class="sound-on" d="M15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11"/>
+                                    </svg>
+                                    <span data-sound-label>Hear Sunny</span>
+                                </button>
                             </div>
+                            <video class="device-video" muted playsinline preload="none" data-reel-video
+                                   poster="assets/lessons/fraction-wall.jpg" aria-label="Lesson clip"></video>
+                        </div>
+                        <figcaption>Real lessons, recorded straight from Sunny, voice and all.</figcaption>
+                    </figure>
+                </div>
+
+                <ul class="pillars" data-reveal-group>
+                    <li data-reveal>
+                        <span class="pillar-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+                        </span>
+                        <h3>Exact by construction</h3>
+                        <p>Every picture is drawn from the lesson's exact numbers. Seven counters are always seven, and three fourths is always three of four equal parts.</p>
+                    </li>
+                    <li data-reveal style="--d: 90ms">
+                        <span class="pillar-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M8 12.5l2.6 2.6L16 9.6"/></svg>
+                        </span>
+                        <h3>Students make the call</h3>
+                        <p>Lessons stop for "your turn" moments. A wrong pick gets a kind nudge and the lesson waits until the student finds the right one.</p>
+                    </li>
+                    <li data-reveal style="--d: 180ms">
+                        <span class="pillar-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="M5 19h4v-4h4v-4h4V7h2"/><path d="M15 5h4v4"/></svg>
+                        </span>
+                        <h3>Help that climbs</h3>
+                        <p>Stuck on a practice problem? Help steps up: a hint, then "watch how" with an example of the same kind, then "let's do yours together."</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ============================== Inside Sunny ============================== -->
+        <section class="section tour" id="tour">
+            <div class="wrap">
+                <div class="section-head" data-reveal>
+                    <p class="kicker"><span>02</span> Inside Sunny</p>
+                    <h2>Reading they choose. <em>Math at their pace.</em></h2>
+                    <p class="section-lede">
+                        Students pick what they love to read about, and Sunny writes stories and
+                        articles around it at exactly their level. Math practice adapts skill by
+                        skill. Parents see the whole picture; students see encouragement.
+                    </p>
+                </div>
+
+                <div class="bento">
+                    <figure class="shot shot-story" data-reveal>
+                        <div class="shot-frame"><img src="assets/app/story.png" alt="A Sunny story, Mara and the Sea Dragon's Map, with the vocabulary words bold and scales underlined." width="1100" height="880" loading="lazy"></div>
+                        <figcaption><strong>Stories built around them.</strong> Fiction runs as a series; nonfiction is grounded in vetted reference material. New words are highlighted as they read.</figcaption>
+                    </figure>
+                    <figure class="shot shot-interests" data-reveal style="--d: 80ms">
+                        <div class="shot-frame"><img src="assets/app/interests.png" alt="The interest picker: painted tiles for Animals, Space and Astronomy, Dinosaurs, Science, and more." width="1100" height="900" loading="lazy"></div>
+                        <figcaption><strong>22 painted worlds</strong> to start from, or type anything at all. Every typed topic is safety-screened for the student's age first.</figcaption>
+                    </figure>
+                    <figure class="shot shot-example" data-reveal>
+                        <div class="shot-frame"><img src="assets/app/math-practice.png" alt="A math practice problem, 49 plus what equals 71, under a painted market scene, with a box for the answer and a hint button." width="1300" height="1040" loading="lazy"></div>
+                        <figcaption><strong>Math practice in painted worlds.</strong> Answers are checked the moment they're typed, and a hint is always one tap away.</figcaption>
+                    </figure>
+                    <figure class="shot shot-feedback" data-reveal style="--d: 80ms">
+                        <div class="shot-frame"><img src="assets/app/feedback.png" alt="A comprehension question about the story, answered correctly, with warm feedback that quotes the passage." width="1100" height="640" loading="lazy"></div>
+                        <figcaption><strong>Answers in their own words,</strong> read carefully and answered kindly, with the passage right beside them.</figcaption>
+                    </figure>
+                    <figure class="shot shot-parent" data-reveal style="--d: 160ms">
+                        <div class="shot-frame"><img src="assets/app/parent-math.png" alt="The parent dashboard's math tab, showing progress on individual skills." width="1100" height="710" loading="lazy"></div>
+                        <figcaption><strong>For parents:</strong> skill-by-skill progress behind a PIN. The numbers stay with you.</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="worlds" aria-label="Some of the painted reading and math worlds">
+                <div class="worlds-track" data-marquee>
+                    <figure><img src="assets/art/worlds/pirates-treasure.webp" alt="" loading="lazy" width="480" height="480"><figcaption>Pirates &amp; Treasure</figcaption></figure>
+                    <figure><img src="assets/art/worlds/space-astronomy.webp" alt="" loading="lazy" width="480" height="480"><figcaption>Space &amp; Astronomy</figcaption></figure>
+                    <figure><img src="assets/art/worlds/math-fractions.webp" alt="" loading="lazy" width="480" height="480"><figcaption>Fractions</figcaption></figure>
+                    <figure><img src="assets/art/worlds/dinosaurs-prehistoric.webp" alt="" loading="lazy" width="480" height="480"><figcaption>Dinosaurs</figcaption></figure>
+                    <figure><img src="assets/art/worlds/animals.webp" alt="" loading="lazy" width="480" height="480"><figcaption>Animals</figcaption></figure>
+                    <figure><img src="assets/art/worlds/math-measurement.webp" alt="" loading="lazy" width="480" height="480"><figcaption>Measurement</figcaption></figure>
+                    <figure><img src="assets/art/worlds/myths-legends-fantasy.webp" alt="" loading="lazy" width="480" height="480"><figcaption>Myths &amp; Legends</figcaption></figure>
+                    <figure><img src="assets/art/worlds/science-how-things-work.webp" alt="" loading="lazy" width="480" height="480"><figcaption>How Things Work</figcaption></figure>
+                    <figure><img src="assets/art/worlds/math-geometric_reasoning.webp" alt="" loading="lazy" width="480" height="480"><figcaption>Shapes</figcaption></figure>
+                    <figure><img src="assets/art/worlds/mysteries-detectives.webp" alt="" loading="lazy" width="480" height="480"><figcaption>Mysteries</figcaption></figure>
+                    <figure><img src="assets/art/worlds/vehicles-transportation.webp" alt="" loading="lazy" width="480" height="480"><figcaption>Vehicles</figcaption></figure>
+                    <figure><img src="assets/art/worlds/math-number_sense_operations.webp" alt="" loading="lazy" width="480" height="480"><figcaption>Numbers</figcaption></figure>
+                    <figure><img src="assets/art/worlds/nature-environment.webp" alt="" loading="lazy" width="480" height="480"><figcaption>Nature</figcaption></figure>
+                    <figure><img src="assets/art/worlds/sports.webp" alt="" loading="lazy" width="480" height="480"><figcaption>Sports</figcaption></figure>
+                    <figure><img src="assets/art/worlds/math-data_analysis.webp" alt="" loading="lazy" width="480" height="480"><figcaption>Data</figcaption></figure>
+                    <figure><img src="assets/art/worlds/math-algebraic_reasoning.webp" alt="" loading="lazy" width="480" height="480"><figcaption>Patterns</figcaption></figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================== Problem ============================== -->
+        <section class="section problem" id="problem">
+            <div class="wrap">
+                <div class="section-head section-head-split" data-reveal>
+                    <div>
+                        <p class="kicker"><span>03</span> Why a harness</p>
+                        <h2>Fluency is not <em>teaching.</em></h2>
+                    </div>
+                    <p class="section-lede">
+                        AI can explain anything, and be wrong about it with exactly the same
+                        confidence. For an adult, that's an inconvenience. For a seven-year-old
+                        learning subtraction for the first time, a wrong answer delivered warmly
+                        is worse than no answer at all.
+                    </p>
+                </div>
+
+                <div class="contrast" data-reveal-group>
+                    <div class="contrast-head" aria-hidden="true">
+                        <span>AI on its own</span>
+                        <span>The same AI, inside Sunny</span>
+                    </div>
+                    <div class="contrast-row" data-reveal>
+                        <p class="contrast-a">Produces math that sounds right and isn't.</p>
+                        <p class="contrast-b">Sunny works out the right answer first. The AI then explains it clearly, in words that fit the student's age.</p>
+                    </div>
+                    <div class="contrast-row" data-reveal>
+                        <p class="contrast-a">Drifts wherever the conversation goes.</p>
+                        <p class="contrast-b">Every lesson comes from a structured, standards-aligned plan, so skills build in the right order.</p>
+                    </div>
+                    <div class="contrast-row" data-reveal>
+                        <p class="contrast-a">Guesses at what a student already knows.</p>
+                        <p class="contrast-b">Sunny gets to know each student: what they've mastered, what's still shaky, and what they're ready for next.</p>
+                    </div>
+                    <div class="contrast-row" data-reveal>
+                        <p class="contrast-a">Writes whatever it writes, and you find out afterwards.</p>
+                        <p class="contrast-b">Nothing reaches a student unchecked. AI output that misses the mark is sent back, and students only see explanations that are right.</p>
+                    </div>
+                    <div class="contrast-row" data-reveal>
+                        <p class="contrast-a">Starts every session from nothing.</p>
+                        <p class="contrast-b">Progress carries forward, so every session picks up right where the last one left off.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================== Harness ============================== -->
+        <section class="section night harness" id="harness">
+            <div class="night-stars" aria-hidden="true"></div>
+            <div class="wrap">
+                <div class="section-head section-head-split" data-reveal>
+                    <div>
+                        <p class="kicker"><span>04</span> How Sunny works</p>
+                        <h2>Layers, <em>not prompts.</em></h2>
+                    </div>
+                    <p class="section-lede">
+                        Sunny treats the AI as one part of a larger system, not the whole thing.
+                        Here is one hint on its way to a second grader. Watch what happens when the
+                        AI's first draft gives the answer away.
+                    </p>
+                </div>
+
+                <div class="pipeline" data-pipeline data-reveal role="img"
+                     aria-label="A hint passes through five stages: the curriculum picks the problem 49 plus what equals 71; Sunny works out the answer, 22; the AI drafts a hint that gives the answer away; the checks catch it and send it back with the reason; the rewritten hint passes every check and reaches the student.">
+                    <div class="pipe-track" aria-hidden="true"><i class="pipe-pulse"></i></div>
+                    <ol class="pipe-steps">
+                        <li class="pipe-step" data-step="0">
+                            <span class="pipe-k">Curriculum</span>
+                            <p>Grade 2 · find the missing number</p>
+                            <code class="pipe-eq">49 + <b>?</b> = 71</code>
                         </li>
-                        <li>
-                            <span class="principle-number">02</span>
-                            <div>
-                                <h3>Build for operation</h3>
-                                <p>Design for the realities of performance, security, maintenance, and change from the beginning.</p>
-                            </div>
+                        <li class="pipe-step" data-step="1">
+                            <span class="pipe-k">Correctness</span>
+                            <p>Worked out by Sunny before the AI says a word</p>
+                            <code class="pipe-eq">? = 22</code>
+                            <span class="pipe-sub">49 → 50 → 71</span>
                         </li>
-                        <li>
-                            <span class="principle-number">03</span>
-                            <div>
-                                <h3>Scale deliberately</h3>
-                                <p>Create strong foundations that can grow without turning simple products into complicated systems.</p>
-                            </div>
+                        <li class="pipe-step" data-step="2">
+                            <span class="pipe-k">The AI writes</span>
+                            <p class="pipe-bubble">
+                                <span class="draft draft-1">Count up from 49 and you'll land on 22!</span>
+                                <span class="draft draft-2">Start at 49. How far is it to 50? Then how far from 50 to 71?</span>
+                            </p>
+                        </li>
+                        <li class="pipe-step" data-step="3">
+                            <span class="pipe-k">Checks</span>
+                            <ul class="checks">
+                                <li class="check check-leak"><i></i>Doesn't give the answer away</li>
+                                <li class="check"><i></i>Every equation is true</li>
+                                <li class="check"><i></i>Reads at a grade 2 level</li>
+                            </ul>
+                            <span class="pipe-return">Sent back with the reason</span>
+                        </li>
+                        <li class="pipe-step" data-step="4">
+                            <span class="pipe-k">The student sees</span>
+                            <p class="pipe-final">
+                                <img src="assets/art/sunny-96.png" alt="" width="36" height="36" loading="lazy">
+                                <span>Start at 49. How far is it to 50? Then how far from 50 to 71?</span>
+                            </p>
                         </li>
                     </ol>
                 </div>
-            </section>
+                <p class="pipe-note" data-reveal>If a rewrite still misses, Sunny falls back to a hint written by people. The AI never grades a math answer.</p>
 
-        </main>
+                <ol class="layers" data-reveal-group>
+                    <li data-reveal>
+                        <span class="layer-n">01</span>
+                        <h3>Curriculum</h3>
+                        <p>A map of 188 math skills, grade by grade, aligned to published state standards. Sunny chooses the next skill; the AI never decides what school looks like.</p>
+                    </li>
+                    <li data-reveal style="--d: 60ms">
+                        <span class="layer-n">02</span>
+                        <h3>Correctness</h3>
+                        <p>The answer to every problem, and the steps to get there, are worked out before the AI is asked for a single word. Accuracy is settled before the lesson is written.</p>
+                    </li>
+                    <li data-reveal style="--d: 120ms">
+                        <span class="layer-n">03</span>
+                        <h3>Verification</h3>
+                        <p>Everything the AI writes is checked for answer leaks, false arithmetic, invented claims and reading level before it's shown. Anything that falls short goes back with the reason.</p>
+                    </li>
+                    <li data-reveal>
+                        <span class="layer-n">04</span>
+                        <h3>Grounding</h3>
+                        <p>Lessons about the real world are built from vetted reference material rather than the AI's memory, so a student exploring a favorite subject gets something new, and true.</p>
+                    </li>
+                    <li data-reveal style="--d: 60ms">
+                        <span class="layer-n">05</span>
+                        <h3>Safety</h3>
+                        <p>Anything a student types is screened before a lesson is written, with the bar set for their age. When in doubt, it fails closed. Safety comes before the writing, not after it.</p>
+                    </li>
+                    <li data-reveal style="--d: 120ms">
+                        <span class="layer-n">06</span>
+                        <h3>Mastery that sticks</h3>
+                        <p>Mastery is measured by what a student keeps: a skill only counts as mastered after a hint-free review days later. Knowing something on Friday isn't the same as knowing it in March.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
 
-        <footer class="site-footer">
-            <div class="content footer-layout">
-                <a class="footer-brand" href="#top">Lilac Labs</a>
-                <p>© 2026 Lilac Labs NGT LLC. All rights reserved.</p>
-                <div class="footer-links">
-                    <a href="projects.html">Projects</a>
-                    <a href="privacy-policy.html">Privacy</a>
+        <!-- ============================== What's next ============================== -->
+        <section class="section next" id="next">
+            <div class="wrap">
+                <div class="section-head" data-reveal>
+                    <p class="kicker"><span>05</span> What's next <span class="tag-soon">In development</span></p>
+                    <h2>A picture for every <em>"I don't get it."</em></h2>
+                    <p class="section-lede">
+                        Every student gets stuck somewhere different. We're teaching Sunny to draw on
+                        the spot: when a student is confused, Sunny works out what tripped them up,
+                        draws the picture that clears it up, and walks them through it step by step.
+                    </p>
+                </div>
+
+                <div class="moment" data-moment data-reveal>
+                    <div class="moment-tabs" role="tablist" aria-label="Examples of a student getting stuck">
+                        <button type="button" role="tab" class="moment-tab is-active" aria-selected="true" aria-controls="moment-body" data-scene="0">"Isn't 1/3 bigger than 1/2?"</button>
+                        <button type="button" role="tab" class="moment-tab" aria-selected="false" aria-controls="moment-body" data-scene="1">"52 − 27 = 35"</button>
+                        <button type="button" role="tab" class="moment-tab" aria-selected="false" aria-controls="moment-body" data-scene="2">"8 + 5 = 12"</button>
+                    </div>
+
+                    <div class="moment-body" id="moment-body" role="tabpanel">
+                        <div class="moment-chat">
+                            <div class="bubble bubble-kid" data-beat="kid">
+                                <img src="assets/art/avatars/fox.webp" alt="" width="44" height="44" data-avatar>
+                                <p data-kid>Isn't 1/3 bigger than 1/2? 3 is bigger than 2.</p>
+                            </div>
+                            <div class="noticed" data-beat="noticed">
+                                <span class="noticed-k">What Sunny noticed</span>
+                                <p data-noticed>They think a bigger bottom number means a bigger piece.</p>
+                            </div>
+                            <div class="bubble bubble-sunny" data-beat="say">
+                                <img src="assets/art/sunny-96.png" alt="" width="44" height="44">
+                                <p data-say aria-live="polite">See? More pieces means smaller pieces. 1/2 is bigger than 1/3.</p>
+                            </div>
+                        </div>
+
+                        <div class="moment-stage">
+                            <div class="moment-bar" aria-hidden="true"><span>Sunny is drawing</span><i class="pen-dot"></i></div>
+                            <svg class="canvas" viewBox="0 0 520 300" role="img" data-canvas
+                                 aria-label="Two bars the same size. One is cut into 2 equal pieces, the other into 3. One half is bigger than one third."></svg>
+                            <div class="moment-checks" data-beat="checks">
+                                <span class="checks-k">Checked before it's drawn</span>
+                                <ul>
+                                    <li><i></i><span data-check>Both bars are the same size</span></li>
+                                    <li><i></i><span data-check>Every piece is cut evenly</span></li>
+                                    <li><i></i><span data-check>Matches the math: 1/2 &gt; 1/3</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="next-foot" data-reveal>
+                    <p>
+                        Sunny will draw with the same tools teachers use, and it will check every
+                        picture first: the pieces really are equal, the hops really are the same size,
+                        and the numbers really add up. As AI gets better, the pictures can get richer.
+                    </p>
+                    <ul class="primitives" aria-label="Things Sunny will be able to draw">
+                        <li>number lines</li><li>fraction bars</li><li>base-ten blocks</li><li>ten frames</li>
+                        <li>arrays</li><li>balance scales</li><li>clocks</li><li>coins</li><li>graphs</li>
+                    </ul>
                 </div>
             </div>
-        </footer>
-    </div>
+        </section>
+
+        <!-- ============================== Longevity ============================== -->
+        <section class="section longevity" id="longevity">
+            <div class="wrap longevity-layout">
+                <div class="longevity-copy" data-reveal>
+                    <p class="kicker"><span>06</span> Built to last</p>
+                    <h2>It gets better <em>as AI does.</em></h2>
+                    <p class="section-lede">
+                        Sunny isn't built around any one AI. It can teach reading and math with
+                        different AI behind the scenes, held to the same high standards. When more
+                        capable AI arrives, Sunny evolves to teach students better without starting over.
+                    </p>
+                    <p class="muted">
+                        The curriculum, the safety standards, the quality checks, and everything we've
+                        learned about how students actually learn are built to last.
+                    </p>
+                </div>
+
+                <div class="swap" data-swap data-reveal role="img" aria-label="Three generations of AI taking turns in the same slot, inside one Sunny that stays the same.">
+                    <div class="swap-shell">
+                        <span class="swap-k">Sunny</span>
+                        <div class="swap-layers">
+                            <span>Curriculum</span><span>Answers in code</span><span>Checks</span><span>Safety</span><span>Mastery</span>
+                        </div>
+                        <div class="swap-slot">
+                            <span class="swap-chip is-active">Today's AI</span>
+                            <span class="swap-chip">Tomorrow's AI</span>
+                            <span class="swap-chip">Whatever comes next</span>
+                        </div>
+                    </div>
+                    <p class="swap-foot">Better AI comes in. The teaching stays.</p>
+                </div>
+
+                <ol class="principles" data-reveal-group>
+                    <li data-reveal>
+                        <h3>Built to welcome better AI</h3>
+                        <p>Sunny isn't tied to any one AI. When a better one comes along, it slots right in, and everything students rely on stays exactly where it was.</p>
+                    </li>
+                    <li data-reveal style="--d: 80ms">
+                        <h3>Better, never just different</h3>
+                        <p>Before any new AI gets to teach a student, it has to meet the same standards as the one it's replacing, on the same evals. No surprises, no backsliding.</p>
+                    </li>
+                    <li data-reveal style="--d: 160ms">
+                        <h3>The parts that last</h3>
+                        <p>The curriculum, the checking, and the safety are ours, and they keep getting better year after year, no matter what AI is inside.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ============================== Beta ============================== -->
+        <section class="section beta" id="beta">
+            <div class="wrap beta-layout">
+                <div class="beta-copy" data-reveal>
+                    <img class="beta-sunny" src="assets/art/sunny-beam.png" alt="" width="140" height="140" loading="lazy">
+                    <p class="kicker"><span>07</span> Join the beta</p>
+                    <h2>Closed beta begins <em>Q4 2026.</em></h2>
+                    <p class="section-lede">
+                        Sunny opens to a small group of families in the final quarter of 2026.
+                        Places are limited, and every account is set up and managed by a parent.
+                    </p>
+                    <p class="muted">
+                        If you'd like your family to be considered, leave your email and we'll be in
+                        touch when places open. Parents and guardians only, please; this form isn't
+                        for students.
+                    </p>
+                </div>
+
+                <div class="beta-card" data-reveal style="--d: 100ms">
+                    <p class="beta-card-label">Beta waitlist</p>
+                    <div class="beta-form" id="beta-form">
+                        <!-- src is set directly so the form loads even if Tally's widget
+                             script is blocked; data-tally-src is kept so the widget can
+                             still wire up dynamic height when it does load. -->
+                        <iframe src="https://tally.so/embed/lbkEZv?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1"
+                                data-tally-src="https://tally.so/embed/lbkEZv?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1"
+                                width="100%" height="230" frameborder="0"
+                                marginheight="0" marginwidth="0" title="Sunny beta waitlist"></iframe>
+                        <p class="form-fallback">
+                            Trouble with the form?
+                            <a href="https://tally.so/r/lbkEZv" target="_blank" rel="noopener">Open it in a new tab</a>.
+                        </p>
+                        <noscript>
+                            <p class="form-notice">The waitlist form needs JavaScript. <a href="https://tally.so/r/lbkEZv" target="_blank" rel="noopener">Open the form in a new tab</a> instead.</p>
+                        </noscript>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================== About ============================== -->
+        <section class="about" id="about">
+            <div class="wrap about-layout" data-reveal>
+                <img src="lilaclabs-avatar.png" alt="" width="56" height="56" loading="lazy">
+                <p>
+                    <strong>Lilac Labs</strong> builds software and the infrastructure under it.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap footer-layout">
+            <a class="footer-brand" href="#top">Lilac Labs</a>
+            <p>© 2026 Lilac Labs NGT LLC. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#beta">Beta</a>
+                <a href="privacy-policy.html">Privacy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js" defer></script>
+    <script>
+        // Tally's official embed loader: loads the widget, and if the widget is
+        // blocked or fails, points each iframe at its data-tally-src directly.
+        (function () {
+            var d = document,
+                w = "https://tally.so/widgets/embed.js",
+                v = function () {
+                    if (typeof Tally !== "undefined") return Tally.loadEmbeds();
+                    d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach(function (e) {
+                        e.src = e.dataset.tallySrc;
+                    });
+                };
+            if (typeof Tally !== "undefined") {
+                v();
+            } else if (d.querySelector('script[src="' + w + '"]') === null) {
+                var s = d.createElement("script");
+                s.src = w;
+                s.onload = v;
+                s.onerror = v;
+                d.body.appendChild(s);
+            }
+        })();
+    </script>
 </body>
 </html>
