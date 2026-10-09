@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,0..100;1,9..144,300..700,0..100&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
     <!-- Bump ?v= whenever styles.css or main.js change: browsers keep the old
          files for a while, and a new page with an old stylesheet looks broken. -->
-    <link rel="stylesheet" href="styles.css?v=20261007">
+    <link rel="stylesheet" href="styles.css?v=20261009">
     <script>document.documentElement.classList.add("js");</script>
     <title>Sunny — An educational harness for AI | Lilac Labs</title>
 </head>
@@ -191,7 +191,7 @@
                             <svg viewBox="0 0 24 24"><path d="M5 19h4v-4h4v-4h4V7h2"/><path d="M15 5h4v4"/></svg>
                         </span>
                         <h3>Help that climbs</h3>
-                        <p>Stuck on a practice problem? Help steps up: a hint, then "watch how" with an example of the same kind, then "let's do yours together."</p>
+                        <p>Stuck on a practice problem? Help steps up as needed: a hint first, then "watch how" with an example of the same kind, then "let's do yours together."</p>
                     </li>
                 </ul>
             </div>
@@ -204,32 +204,79 @@
                     <p class="kicker"><span>02</span> Inside Sunny</p>
                     <h2>Reading they choose. <em>Math at their pace.</em></h2>
                     <p class="section-lede">
-                        Students pick what they love to read about, and Sunny writes stories and
-                        articles around it at exactly their level. Math practice adapts skill by
-                        skill. Parents see the whole picture; students see encouragement.
+                        Students pick a topic they love, and Sunny writes stories and articles about
+                        it at exactly their reading level. As their reading improves, the passages get
+                        harder, so they keep growing as readers. Math practice adapts skill by skill.
                     </p>
                 </div>
 
                 <div class="bento">
-                    <figure class="shot shot-story" data-reveal>
-                        <div class="shot-frame"><img src="assets/app/story.png" alt="A Sunny story, Mara and the Sea Dragon's Map, with the vocabulary words bold and scales underlined." width="1100" height="880" loading="lazy"></div>
-                        <figcaption><strong>Stories built around them.</strong> Fiction runs as a series; nonfiction is grounded in vetted reference material. New words are highlighted as they read.</figcaption>
+                    <figure class="shot shot-nonfiction" data-reveal>
+                        <div class="shot-frame"><img src="assets/app/nonfiction.webp" alt="A Sunny nonfiction reading, Eyes in the Sky: How Satellites Help Us, under a painting of Saturn and Earth. The word orbit is tapped, showing its definition: to move in a circular path around something, like a planet or star." width="1400" height="1038" loading="lazy"></div>
+                        <figcaption><strong>Reading built around what they love.</strong> Nonfiction is grounded in vetted reference material, so students learn real facts. New vocabulary is highlighted as they read, with definitions a tap away.</figcaption>
                     </figure>
                     <figure class="shot shot-interests" data-reveal style="--d: 80ms">
                         <div class="shot-frame"><img src="assets/app/interests.png" alt="The interest picker: painted tiles for Animals, Space and Astronomy, Dinosaurs, Science, and more." width="1100" height="900" loading="lazy"></div>
-                        <figcaption><strong>22 painted worlds</strong> to start from, or type anything at all. Every typed topic is safety-screened for the student's age first.</figcaption>
+                        <figcaption><strong>22 painted worlds</strong> to start from, or they can type their own. Every topic is safety-screened for the student's age.</figcaption>
                     </figure>
-                    <figure class="shot shot-example" data-reveal>
-                        <div class="shot-frame"><img src="assets/app/math-practice.png" alt="A math practice problem, 49 plus what equals 71, under a painted market scene, with a box for the answer and a hint button." width="1300" height="1040" loading="lazy"></div>
-                        <figcaption><strong>Math practice in painted worlds.</strong> Answers are checked the moment they're typed, and a hint is always one tap away.</figcaption>
+                    <div class="ladder" id="help">
+                        <div class="ladder-head" data-reveal>
+                            <div>
+                                <p class="ladder-k">When they're stuck on a math problem</p>
+                                <h3>Help that climbs, <em>one step at a time.</em></h3>
+                            </div>
+                            <p>
+                                A Help button sits under every problem. Each press gives a little more
+                                help but never gives the answer away, so the student always takes the
+                                last step.
+                            </p>
+                        </div>
+
+                        <ol class="ladder-steps" data-reveal-group>
+                            <li class="ladder-step" data-reveal>
+                                <span class="ladder-n" aria-hidden="true">1</span>
+                                <span class="ladder-btn">Help: a hint</span>
+                                <div class="ladder-shot"><img src="assets/app/help-hint.webp" alt="A coin problem: how much is 1 quarter, 2 dimes and 4 pennies? Sunny's first hint sits on the card: let's start by finding the quarter, that's the biggest coin." width="780" height="1180" loading="lazy"></div>
+                                <p><strong>A nudge.</strong> Sunny points the way without telling the answer.</p>
+                            </li>
+                            <li class="ladder-step" data-reveal style="--d: 90ms">
+                                <span class="ladder-n" aria-hidden="true">2</span>
+                                <span class="ladder-btn">Help: watch how</span>
+                                <div class="ladder-shot"><img src="assets/app/help-watch.webp" alt="Sunny counts a different set of coins, biggest first: a quarter, a dime, a nickel and a penny make 25, 35, 40, 41 cents." width="780" height="1180" loading="lazy"></div>
+                                <p><strong>A fresh example.</strong> Sunny shows the method on a problem of the same type and leaves the rule on screen as a reminder.</p>
+                            </li>
+                            <li class="ladder-step" data-reveal style="--d: 180ms">
+                                <span class="ladder-n" aria-hidden="true">3</span>
+                                <span class="ladder-btn">Help: let's do yours together</span>
+                                <div class="ladder-shot"><img src="assets/app/help-together.webp" alt="The lesson on the student's own coins, counting on from the quarter: 25, 35, 45, 46, 47, 48 cents, with the last penny still to count." width="780" height="1180" loading="lazy"></div>
+                                <p><strong>Their own problem.</strong> The lesson goes through their actual problem and stops one step before the answer.</p>
+                            </li>
+                            <li class="ladder-step" data-reveal style="--d: 270ms">
+                                <span class="ladder-n" aria-hidden="true">4</span>
+                                <span class="ladder-btn ladder-btn-rest">Give it a try!</span>
+                                <div class="ladder-shot"><img src="assets/app/help-stopped.webp" alt="Back on the problem card, the counted coins sit above the answer choices under the heading Where we stopped." width="780" height="1180" loading="lazy"></div>
+                                <p><strong>Their turn.</strong> The picture comes back to the card, so students do the last step with the work in view.</p>
+                            </li>
+                        </ol>
+
+                        <p class="ladder-foot" data-reveal>
+                            Help is counted honestly. Past the initial hint, a right answer earns half the
+                            progress, and a problem of the same type comes back later. If they get that one
+                            on their own, Sunny makes sure they know it: <em>"You did that one all by
+                            yourself!"</em>
+                        </p>
+                    </div>
+                    <figure class="shot shot-story" data-reveal>
+                        <div class="shot-frame"><img src="assets/app/story.png" alt="A Sunny story, Mara and the Sea Dragon's Map, with the vocabulary words bold and scales underlined." width="1100" height="880" loading="lazy"></div>
+                        <figcaption><strong>Stories that keep going.</strong> The fiction they love continues chapter by chapter.</figcaption>
                     </figure>
                     <figure class="shot shot-feedback" data-reveal style="--d: 80ms">
                         <div class="shot-frame"><img src="assets/app/feedback.png" alt="A comprehension question about the story, answered correctly, with warm feedback that quotes the passage." width="1100" height="640" loading="lazy"></div>
-                        <figcaption><strong>Answers in their own words,</strong> read carefully and answered kindly, with the passage right beside them.</figcaption>
+                        <figcaption><strong>They answer in their own words.</strong> No multiple choice to guess from. If an answer misses, Sunny gives hints about where to find it in the reading.</figcaption>
                     </figure>
                     <figure class="shot shot-parent" data-reveal style="--d: 160ms">
                         <div class="shot-frame"><img src="assets/app/parent-math.png" alt="The parent dashboard's math tab, showing progress on individual skills." width="1100" height="710" loading="lazy"></div>
-                        <figcaption><strong>For parents:</strong> skill-by-skill progress behind a PIN. The numbers stay with you.</figcaption>
+                        <figcaption><strong>For parents:</strong> detailed, skill-by-skill progress on a PIN-protected dashboard. The numbers stay with you.</figcaption>
                     </figure>
                 </div>
             </div>
